@@ -10,7 +10,7 @@ public class DecoDataMain {
 
         System.out.println("2. 인스턴스 호출1");
         DecoData decoData = new DecoData();
-        decoData.instanceCall(); //staticValue = 2
+        decoData.instanceCall(); //instanceValue = 1, staticValue = 2
 
         System.out.println("3. 인스턴스 호출2");
         DecoData decoData2 = new DecoData();

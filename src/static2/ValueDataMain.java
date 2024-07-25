@@ -4,7 +4,7 @@ public class ValueDataMain {
     //정적 메서드는 정적 메서드만 호출 가능
     public static void main(String[] args) {
         ValueData valueData = new ValueData();
-        add(valueData); //static
+        add(valueData);
         add(valueData);
         add(valueData);
         System.out.println("최종숫자 = " + valueData.value);
