@@ -9,7 +9,7 @@ public class Rectangle {
     }
 
     int calculatePerimeter() {
-        return 2 * (width * height);
+        return 2 * (width + height);
     }
 
     boolean isSquare() {
