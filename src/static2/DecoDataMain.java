@@ -15,12 +15,9 @@ public class DecoDataMain {
         System.out.println("3. 인스턴스 호출2");
         DecoData decoData2 = new DecoData();
         decoData2.instanceCall(); //instanceValue = 1, staticValue = 3
-
         DecoData.staticCall(decoData2); //instanceValue = 2
-
-        //import static
-        staticCall();
-        staticCall();
-        staticCall();
+        staticCall(); //staticValue = 4
+        staticCall(); //staticValue = 5
+        staticCall(); //staticValue = 6
     }
 }
