@@ -12,8 +12,8 @@ public class AccessInnerMain {
         accessData.defaultMethod();
 
         //private
-        //accessData.privateField = 3; //privateField has private access in access.a.AccessData
-        //accessData.privateMethod();
+//        accessData.privateField = 3; //privateField has private access in access.a.AccessData
+//        accessData.privateMethod();
 
         accessData.innerAccess();
     }
