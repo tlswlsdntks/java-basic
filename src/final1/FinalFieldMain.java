@@ -21,7 +21,6 @@ public class FinalFieldMain {
         /**
          * 메모리 낭비를 줄일 수 있다.
          */
-
         //상수
         System.out.println("상수");
         System.out.println("FieldInit.CONST_VALUE = " + FieldInit.CONST_VALUE); //method 영역(10)
