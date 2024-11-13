@@ -17,7 +17,8 @@ public class PayMain2 {
 
             System.out.print("결제 금액을 입력하세요: ");
             int amount = scanner.nextInt();
-            scanner.nextLine();
+            //개행 삭제
+            scanner.nextLine(); //\n
 
             payService.processPay(payOption, amount);
         }

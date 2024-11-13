@@ -6,6 +6,10 @@ public class SoundFlyMain {
         Bird bird = new Bird();
         Chicken chicken = new Chicken();
 
+        dog.move();
+        bird.move();
+        chicken.move();
+
         soundAnimal(dog);
         soundAnimal(bird);
         soundAnimal(chicken);
