@@ -14,8 +14,7 @@ public class CastingMain5 {
     private static void call(Parent parent) {
         parent.parentMethod();
         if (parent instanceof Child) { //RuntimeException 해결방법
-            //parent1: Child = new Parent(); → 자식은 부모를 담을 수 없다.
-            //parent2: Child = new Child();
+            //parent가 Child에 속하거나 Child를 상속받는 클래스에 속하면 true를 반환
             System.out.println("Child 인스턴스 맞음");
             ((Child) parent).childMethod();
         }

@@ -6,6 +6,6 @@ public class ValueObjectMain {
         valueObject.add();
         valueObject.add();
         valueObject.add();
-        System.out.println("최종숫자 = " + valueObject.value);
+        System.out.println("최종 숫자 = " + valueObject.value);
     }
 }
