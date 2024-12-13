@@ -1,5 +1,5 @@
 package ref;
 
 public class Data {
-    int value;
+    int value; //0
 }

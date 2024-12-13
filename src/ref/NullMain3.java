@@ -5,6 +5,6 @@ public class NullMain3 {
         BigData bigData = new BigData();
         System.out.println("bigData.data = " + bigData.data); //null
         System.out.println("bigData.count = " + bigData.count); //0
-        System.out.println("bigData.data.value = " + bigData.data.value); //NullPointerException
+        System.out.println("bigData.data.value = " + bigData.data.value); //java.lang.NullPointerException: Cannot read field "value" because "bigData.data" is null
     }
 }

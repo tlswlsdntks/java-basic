@@ -1,22 +1,17 @@
 package poly.ex6;
 
+import java.text.Bidi;
+
 public class SoundFlyMain {
     public static void main(String[] args) {
-        Dog dog = new Dog();
-        Bird bird = new Bird();
-        Chicken chicken = new Chicken();
-
-        dog.move();
-        bird.move();
-        chicken.move();
-
-        soundAnimal(dog);
-        soundAnimal(bird);
-        soundAnimal(chicken);
-
-        //flyAnimal(dog); //java: incompatible types: poly.ex6.Dog cannot be converted to poly.ex6.Fly
-        flyAnimal(bird);
-        flyAnimal(chicken);
+        AbstractAnimal[] animals = {new Dog(), new Bird(), new Chicken()};
+        for (AbstractAnimal animal : animals) {
+            animal.move();
+            soundAnimal(animal);
+            if (animal instanceof Fly flyAnimal) {
+                flyAnimal(flyAnimal);
+            }
+        }
     }
 
     //AbstractAnimal 사용 가능

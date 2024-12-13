@@ -1,6 +1,6 @@
 package poly.ex6;
 
-public class Bird extends AbstractAnimal implements Fly { //상속-단일, 구현-다중
+public class Bird extends AbstractAnimal implements Fly { //상속: 단일, 구현: 다중
     @Override
     public void sound() {
         System.out.println("짹짹");

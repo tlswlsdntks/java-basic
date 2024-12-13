@@ -3,17 +3,12 @@ package poly.ex5;
 public class InterfaceMain {
     public static void main(String[] args) {
         //인터페이스 생성 불가
-        //InterfaceAnimal interfaceAnimal = new InterfaceAnimal(); //java: poly.ex5.InterfaceAnimal is abstract; cannot be instantiated
-
-        Dog dog = new Dog();
-        Cat cat = new Cat();
-        Caw caw = new Caw();
-
+//        InterfaceAnimal interfaceAnimal = new InterfaceAnimal(); //poly.ex5.InterfaceAnimal is abstract; cannot be instantiated
         System.out.println(InterfaceAnimal.MY_PI);
-
-        soundAnimal(dog);
-        soundAnimal(cat);
-        soundAnimal(caw);
+        InterfaceAnimal[] animals = {new Dog(), new Cat(), new Caw()};
+        for (InterfaceAnimal animal : animals) {
+            soundAnimal(animal);
+        }
     }
 
     private static void soundAnimal(InterfaceAnimal animal) {

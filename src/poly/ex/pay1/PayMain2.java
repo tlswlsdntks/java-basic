@@ -9,7 +9,6 @@ public class PayMain2 {
         while (true) {
             System.out.print("결제 수단을 입력하세요: ");
             String payOption = scanner.nextLine();
-
             if (payOption.equals("exit")) {
                 System.out.println("프로그램을 종료합니다");
                 break;
@@ -17,9 +16,7 @@ public class PayMain2 {
 
             System.out.print("결제 금액을 입력하세요: ");
             int amount = scanner.nextInt();
-            //개행 삭제
-            scanner.nextLine(); //\n
-
+            scanner.nextLine(); //개행(\n) 삭제
             payService.processPay(payOption, amount);
         }
     }

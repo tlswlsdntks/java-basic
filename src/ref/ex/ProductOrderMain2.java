@@ -3,11 +3,10 @@ package ref.ex;
 import java.util.Scanner;
 
 public class ProductOrderMain2 {
-
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.print("입력할 주문의 개수를 입력하세요: ");
-        int n = scanner.nextInt(); //\n
+        int n = scanner.nextInt(); //int\n
         ProductOrder[] orders = new ProductOrder[n];
         orders = createOrder(orders, scanner);
         printOrders(orders);
@@ -31,7 +30,7 @@ public class ProductOrderMain2 {
 
     static ProductOrder[] createOrder(ProductOrder[] orders, Scanner scanner) {
         for (int i = 0; i < orders.length; i++) {
-            scanner.nextLine();
+            scanner.nextLine(); //개행(\n) 삭제
             ProductOrder order = new ProductOrder();
             System.out.println((i + 1) + "번째 주문 정보를 입력하세요.");
             System.out.print("상품명: ");
