@@ -6,6 +6,7 @@ public class MemberInitMain1 {
         member1.name = "user1";
         member1.age = 15;
         member1.grade = 90;
+
         MemberInit member2 = new MemberInit();
         member2.name = "user2";
         member2.age = 16;

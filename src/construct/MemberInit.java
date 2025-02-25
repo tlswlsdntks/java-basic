@@ -5,7 +5,9 @@ public class MemberInit {
     int age;
     int grade;
 
-    //생성자
+    //기본 생성자
+
+    //함수
     void initMember(String name, int age, int grade) {
         //this.name → 멤버변수
         //name → 매개변수
