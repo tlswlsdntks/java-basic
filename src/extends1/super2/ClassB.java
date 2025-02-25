@@ -1,7 +1,6 @@
 package extends1.super2;
 
 public class ClassB extends ClassA {
-
     //기본 생성자가 없음
 
     public ClassB(int a) {

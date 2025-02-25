@@ -1,6 +1,6 @@
 package poly.ex5;
 
-public class Cat implements InterfaceAnimal{
+public class Cat implements InterfaceAnimal { //implements: 구현
     @Override
     public void sound() {
         System.out.println("냐옹");

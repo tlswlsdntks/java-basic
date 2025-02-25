@@ -13,8 +13,8 @@ public class CastingMain6 {
 
     private static void call(Parent parent) {
         parent.parentMethod();
-        //Child 인스턴스인 경우, childMethod() 실행
-        if (parent instanceof Child child) { //JDK_16 → 변수 선언
+        if (parent instanceof Child child) { //RuntimeException 해결방법
+            //parent가 Child에 속하거나 Child를 상속받는 클래스에 속하면 true를 반환
             System.out.println("Child 인스턴스 맞음");
             child.childMethod();
         }

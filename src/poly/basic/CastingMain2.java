@@ -7,11 +7,7 @@ public class CastingMain2 {
         //부모는 자식을 담을 수 있다.
         //단, 자식의 기능은 호출할 수 없다.
         Parent poly = new Child();
-        //poly.childMethod(); //cannot find symbol → 다운 캐스팅
-
-        //다운 캐스팅(부모 타입 → 자식 타입)
-        Child child = (Child) poly;
-        child.childMethod();
+//        poly.childMethod(); //cannot find symbol
 
         //일시적 다운 캐스팅: 해당 메서드를 호출하는 순간만 다운캐스팅
         ((Child) poly).childMethod();

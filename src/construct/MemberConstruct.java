@@ -9,7 +9,7 @@ public class MemberConstruct {
     public MemberConstruct(String name, int age) {
         //다른 생성자 호출 → this()
         //생성자 코드의 첫줄에만 작성이 가능하다.
-        //System.out.println("다른 생성자 호출"); //call to this must be first statement in constructor
+//        System.out.println("다른 생성자 호출"); //call to this must be first statement in constructor
         this(name, age, 50);
     }
 

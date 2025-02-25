@@ -9,6 +9,8 @@ public class CastingMain4 {
 
         Parent parent2 = new Parent(); //인스턴스에 Child가 존재하지 않음
         Child child2 = (Child) parent2; //RuntimeException: Exception in thread "main" java.lang.ClassCastException
-        child2.childMethod(); //실행 불가
+        //실행 불가
+        child2.childMethod(); //class poly.basic.Parent cannot be cast to class poly.basic.Child (poly.basic.Parent and poly.basic.Child are in unnamed module of loader 'app')
+
     }
 }
