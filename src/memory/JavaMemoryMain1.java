@@ -9,7 +9,7 @@ public class JavaMemoryMain1 {
 
     static void method1(int m1) {
         System.out.println("method1 start");
-        int cal = m1 * 2;
+        int cal = m1 * 2; //stack
         method2(cal);
         System.out.println("method1 end");
     }

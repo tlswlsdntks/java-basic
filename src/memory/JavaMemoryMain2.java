@@ -9,7 +9,7 @@ public class JavaMemoryMain2 {
 
     static void method1() {
         System.out.println("method1 start");
-        Data data1 = new Data(10); //new Data(10) → heap 영역 → 가비지 컬렉션 대상
+        Data data1 = new Data(10); //heap → 가비지 컬렉션 대상
         method2(data1);
         System.out.println("method1 end");
     }

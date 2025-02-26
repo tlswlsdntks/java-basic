@@ -13,15 +13,17 @@ public class FinalFieldMain {
         System.out.println("필드 초기화");
         FieldInit fieldInit1 = new FieldInit();
         FieldInit fieldInit2 = new FieldInit();
-        System.out.println("fieldInit1.value = " + fieldInit1.value); //heap 영역(10)
-        System.out.println("fieldInit2.value = " + fieldInit2.value); //heap 영역(10)
+        System.out.println("fieldInit1.value = " + fieldInit1.value);
+        System.out.println("fieldInit2.value = " + fieldInit2.value);
 
         /**
-         * 메모리 낭비를 줄일 수 있다.
+         * FieldInit 과 같이 final 필드를 필드에서 초기화 하는 경우, 모든 인스턴스가 같은 값을 사용하기 때문에 결과적으로 메모리를 낭비하게 된다.
+         * 또 메모리 낭비를 떠나서 같은 값이 계속 생성되는 것은 개발자 입장에서 명확한 중복이다.
+         * 이럴때 사용하면 좋은 것이 바로 static 이다.
          */
         //상수
         System.out.println("상수");
-        System.out.println("FieldInit.CONST_VALUE = " + FieldInit.CONST_VALUE); //method 영역(10)
+        System.out.println("FieldInit.CONST_VALUE = " + FieldInit.CONST_VALUE);
 
         System.out.println("Constant.PI = " + Constant.PI);
         System.out.println("Constant.HOURS_IN_DAY = " + Constant.HOURS_IN_DAY);
